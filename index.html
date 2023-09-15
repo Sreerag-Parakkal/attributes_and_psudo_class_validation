@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title> 
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form action="./profile.html" id="signup" method="post" onsubmit="return validateForm()">
+      <div class="input-box">
+        <input type="text" id="name" name="fname" placeholder="Enter your name" required pattern="[A-Za-z\s]+" minlength="4" />
+        <span class="span-field" id="nameError" style="color: red;"></span>
+      </div>
+      <div class="input-box">
+        <input type="email" id="email" placeholder="Email Address" name="email" required />
+        <span class="span-field" id="emailError" style="color: red;"></span>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password" name="password" placeholder="Password" required minlength="8" maxlength="16" />
+        <span class="span-field" id="passwordError" style="color: red;"></span>
+      </div>
+      <div class="input-box">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <span class="span-field" id="conPassError" style="color: red;"></span>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Register Now">
+      </div>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
